@@ -1,33 +1,35 @@
-.tooltip {
+.container{
+    width: 40%;
+    margin: 7% auto;
+  }
+  
+  .tooltip {
     position: relative;
-    display: inline-block;
-    margin: 10px;
+    display: block;
+    cursor: pointer;
   }
   
   .tooltiptext {
+    visibility: hidden;
     position: absolute;
-    bottom: 125%;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: #333;
-    color: #fff;
-    padding: 5px 8px;
+    transform: translateX(50%);
+    width: 220px;
+    background-color: red;
+    color: #000;
+    border: 1px solid #ccc;
+    padding: 10px;
     border-radius: 4px;
-    white-space: nowrap;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+    position: absolute;
+    
+  }
+  .first{
+    bottom: 50px;
     z-index: 1;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.2s ease;
+      bottom: 100%;
+      left: 10%;
   }
   
-  /* Classes for visibility toggle */
-  .show {
-    opacity: 1;
+  .tooltip:hover .tooltiptext {
     visibility: visible;
-  }
-  
-  .hide {
-    opacity: 0;
-    visibility: hidden;
-  }
-  
+}

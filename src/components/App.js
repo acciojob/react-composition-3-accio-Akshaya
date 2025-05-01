@@ -1,22 +1,21 @@
-import React,{useState} from "react";
-import './../styles/App.css';
-import Tooltip from "./Tooltip";
+import React from "react";
+import '../styles/App.css';
+import ToolTip from "./Tooltip";
+
 
 const App = () => {
   return (
-    <div>
-        {/* Do not remove the main div */}
-        <div className="App" id="main">
-          <Tooltip text="This is a tooltip for the button">
-            <button>Hover over me</button>
-          </Tooltip>
-
-          <Tooltip text="Tooltip for text">
-                <p>Hover over this text</p>
-          </Tooltip>
-        </div>
+    <div className="container">
+        
+        <ToolTip text="This is a tooltip">
+          <h2>Hover over me</h2>
+        </ToolTip>
+        <hr/>
+        <ToolTip text="This is another tooltip">
+          <p>Hover over me to see another tooltip</p>
+        </ToolTip>
     </div>
-  );
-};
+  )
+}
 
-export default App;
+export default App
