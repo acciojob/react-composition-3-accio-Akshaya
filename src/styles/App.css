@@ -1,23 +1,28 @@
 
-.tooltip {
+.App {
+    font-family: sans-serif;
+    text-align: center;
+  }
+  div {
+    padding: 20px;
+  }
+  .tooltip {
     position: relative;
-    display: block;
-    background-color:none;
-    margin-bottom: 20px;
-    border: 1px solid rgb(218, 211, 211) ;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+    cursor: pointer;
   }
-  
-  .tooltiptext {
-    position: absolute;
-   
-    color: white;
-    padding: 8px;
-    border-radius: 4px;
-    top: 100%; /* below the element */
-    left: 50%;
-    transform: translateX(-50%);
-    white-space: nowrap;
-    z-index: 10;
+  .tooltip .tooltiptext {
+    width: 120px;
     background-color: red;
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;
   }
-  
+ 
