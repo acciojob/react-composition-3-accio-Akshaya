@@ -1,16 +1,23 @@
-.tooltip {
-  position: relative;
-  display: inline-block;
-  cursor: pointer;
-}
 
-.tooltiptext {
-  position: absolute;
-  background-color: #333;
-  color: #fff;
-  padding: 6px 10px;
-  border-radius: 4px;
-  white-space: nowrap;
-  margin-top: 4px;
-  z-index: 10;
-}
+.tooltip {
+    position: relative;
+    display: block;
+    background-color:none;
+    margin-bottom: 20px;
+    border: 1px solid rgb(218, 211, 211) ;
+  }
+  
+  .tooltiptext {
+    position: absolute;
+   
+    color: white;
+    padding: 8px;
+    border-radius: 4px;
+    top: 100%; /* below the element */
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    z-index: 10;
+    background-color: red;
+  }
+  
